@@ -6,20 +6,137 @@
 
 .wrapper {
   width: 100%;
+  font-family: roboto;
+  background-size: cover;
 }
 .wrapper .header {
   width: 100%;
-  background-image: url(../img/intro-top.jpg);
-  background-size: cover;
 }
 .wrapper .header .nav {
+  display: flex;
+  align-items: baseline;
   width: 100%;
   height: 90px;
   background: #000000;
+  color: #ffffff;
+}
+.wrapper .header .nav-title {
+  font-size: 30px;
+  margin: 40px 80px 10px 120px;
+}
+.wrapper .header .nav-list {
+  display: flex;
+  align-items: baseline;
+  list-style: none;
+}
+.wrapper .header .nav-list li {
+  margin-left: 60px;
+  font-size: 13px;
 }
 .wrapper .header .jumbotron {
-  height: 200px;
-  background-image: url(../img/girl.png);
-  background-size: contain;
+  height: 430px;
+  background-image: url("../img/girl.jpg");
+  background-position: -300px;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+.wrapper .header .jumbotron::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrapper .header .jumbotron .info-box {
+  width: 400px;
+  height: 400px;
+  margin-top: 30px;
+  margin-left: 400px;
+  float: left;
+  color: #393333;
+}
+.wrapper .header .jumbotron .info-box h2 {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+}
+.wrapper .header .jumbotron .info-box h2 .particular {
+  color: #b94eb4;
+}
+.wrapper .header .jumbotron .info-box .subtitle {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.wrapper .header .jumbotron .info-box-list {
+  list-style: none;
+  font-weight: 400;
+}
+.wrapper .header .jumbotron .info-box-list li {
+  margin: 15px;
+}
+.wrapper .header .jumbotron .info-box .button {
+  width: 250px;
+  height: 60px;
+  margin-top: 35px;
+  border: 2px solid #000000;
+}
+.wrapper .header .jumbotron .info-box .button::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrapper .header .jumbotron .info-box .button .text {
+  float: left;
+  margin: 10px;
+}
+.wrapper .header .jumbotron .info-box .button .text-up {
+  font-weight: 600;
+}
+.wrapper .header .jumbotron .info-box .button .text-bottom {
+  font-weight: 300;
+}
+.wrapper .header .jumbotron .info-box .button .symbol {
+  float: right;
+  font-size: 32px;
+  margin: 10px;
+}
+.wrapper .header .jumbotron .info-box .button:hover {
+  cursor: pointer;
+}
+.wrapper .header .jumbotron .pay-box {
+  width: 400px;
+  height: 400px;
+  margin-top: 30px;
+  background: #000000;
+  margin-left: 100px;
+  float: left;
+}
+.wrapper .header .jumbotron .pay-box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrapper .header .jumbotron .pay-box .text {
+  float: left;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.wrapper .header .jumbotron .pay-box .text .import {
+  font-size: 36px;
+}
+.wrapper .header .jumbotron .pay-box .logo {
+  float: right;
+  margin: 25px;
+}
+.wrapper .header .jumbotron .pay-box .button {
+  width: 150px;
+  height: 30px;
+  background: #009cff;
+  color: #ffffff;
+  margin-top: 130px;
+  margin-left: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+.wrapper .header .jumbotron .pay-box .button:hover {
+  cursor: pointer;
 }

@@ -1,0 +1,16 @@
+$top : '../img/intro-top.jpg';
+$girl : '../img/girl.jpg';
+
+
+$main-font: roboto;
+
+
+@mixin flex {
+    display: flex;
+    align-items: baseline;
+}
+@mixin clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}

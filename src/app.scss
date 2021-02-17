@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'variables';
 
 * {
     box-sizing: border-box;
@@ -7,22 +8,130 @@
 }
 .wrapper {
     width: 100%;
+    font-family: $main-font;
+    background-size: cover;
     .header {
         width: 100%;
-        background-image: url(../img/intro-top.jpg);
-        background-size: cover;
         .nav {
+            @include flex;
             width: 100%;
             height: 90px;
             background: $black;
+            color: $white;
+            &-title {
+                font-size: 30px;
+                margin: 40px 80px 10px 120px;
+            }
+            &-list {
+                @include flex;
+                list-style: none;
+                li{
+                    margin-left: 60px;
+                    font-size: 13px;
+                }
+            }   
         }
         .jumbotron {
-            height: 200px;
-            background-image: url(../img/girl.png);
-            background-size: contain;
+            height: 430px;
+            background-image: url($girl);
+            background-position: -300px;
+            background-size: cover;
             background-repeat: no-repeat;
-        }
-        
+            &::after {
+                @include clearfix;
+            }
+            .info-box {
+                width: 400px;
+                height: 400px;
+                margin-top: 30px;
+                margin-left: 400px;
+                float: left;
+                color: $gray;
+                h2 {
+                    font-size: 30px;
+                    font-style: italic;
+                    font-weight: 400;
+                    .particular {
+                        color: $purple;
+                    }
+                }
+                .subtitle {
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+                &-list {
+                    list-style: none;
+                    font-weight: 400;
+                    li {
+                        margin: 15px;
+                    }
+                }
+                .button {
+                    width: 250px;
+                    height: 60px;
+                    margin-top: 35px;
+                    border: 2px solid $black;
+                    &::after {
+                        @include clearfix;
+                    }
+                    .text {
+                        float: left;
+                        margin: 10px;
+                        &-up {
+                            font-weight: 600;
+                        }
+                        &-bottom {
+                            font-weight: 300;
+                        }
+                    }
+                    .symbol {
+                        float: right;
+                        font-size: 32px;
+                        margin: 10px;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+            .pay-box {
+                width: 400px;
+                height: 400px;
+                margin-top: 30px;
+                background: $black;
+                margin-left: 100px;
+                float: left;
+                &::after {
+                    @include clearfix;
+                }
+                .text {
+                    float: left;
+                    color: $white;
+                    margin-top: 40px;
+                    margin-left: 30px;
+                    .import {
+                        font-size: 36px;
+                    }
+                }
+                .logo {
+                    float: right;
+                    margin: 25px;
+                }
+                .button {
+                    width: 150px;
+                    height: 30px;
+                    background: $lightblue;
+                    color: $white;
+                    margin-top: 130px;
+                    margin-left: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        } 
     }
 
 }
