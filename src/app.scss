@@ -1,0 +1,28 @@
+@import 'colors';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 100%;
+    .header {
+        width: 100%;
+        background-image: url(../img/intro-top.jpg);
+        background-size: cover;
+        .nav {
+            width: 100%;
+            height: 90px;
+            background: $black;
+        }
+        .jumbotron {
+            height: 200px;
+            background-image: url(../img/girl.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+    }
+
+}
